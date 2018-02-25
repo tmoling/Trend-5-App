@@ -1,0 +1,129 @@
+.jumbotron {
+  /* color gradient info */
+  background: #f1e59e; 
+  background: -webkit-linear-gradient(to top, #f1e59e, #f05053);  
+  background: linear-gradient(to top, #f1e59e, #f05053); 
+  padding: 0.5em 0.6em;
+}
+
+body, 
+.panel-heading,
+.panel {
+  background-color: #f1e59e;
+}
+
+.well {
+  /* color for behind links after button click */
+  background : rgba(242, 166, 126, 0.37);
+}
+
+.panel-title {
+  background: rgba(242, 166, 126, 0.37);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#totalCon{
+  /* others are seeing what's trending too */
+  font-weight: 700;
+}
+
+h2 {
+  /* TREND text */
+  font-family: 'Pacifico', cursive;
+  font-size: 85px;
+  color: rgb(0, 0, 0)
+}
+
+h3 {
+  /* 5 text */
+  font-family: 'Monoton', cursive;
+  font-size: 120px;
+  color: #f1e59e;
+  /* css for animating the 5 */
+  animation-name: logo;
+  animation-duration: 8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+   /* css for animating the 5 */
+  from {color:#f1e59e;}
+  to {color:#f05053;}
+}
+
+h5 {
+   /* your day starts here text */
+  font-family: 'Codystar', cursive;
+  font-weight: bold;
+  font-size: 35px;
+  color: rgb(0, 0, 0)
+} 
+
+ /* css for buttons */
+.btn {
+  background-color: #f3a97fd6;
+}
+
+.btn:hover{
+  background:#f05053;
+}
+
+.btn:focus{
+  background:#f3a97fd6;
+}
+/*  */
+
+
+#newsTitle, #authorQuote, #noresultsText {
+ /* headline and quote text */
+  font-family: 'Fredoka One', cursive;
+  font-size: 25px;
+  color: black;
+  font-weight: 200;
+}
+
+#newsHEADING {
+font-weight: 600;
+}
+
+#newsDescription{
+  max-width: 75ch;
+}
+
+img {
+   /* images for links */
+    height: 75px;
+    width: 75px;
+}
+#noresults {
+  height: 200px;
+  width: 200px;
+}
+
+
+/* media queries */
+@media screen and (max-width: 640px) {
+  .btn {
+    font-size: 10px; 
+  }
+  .form-inline {
+    inline-size: 50%;
+  }
+  #searchSUBMIT {
+    position: relative;
+  }
+  .panel-heading {
+    width: 100%;
+  }
+  #newsTitle {
+    margin-left: 0px;
+    font-size: 13px;
+  }
+  #authorQuote {
+    font-size: 13px;
+  }
+}
+
+
